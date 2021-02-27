@@ -1,0 +1,69 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.M.M.M.L.G</title>
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-image: url(staticfiles/images/sky1.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size:cover;">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" id="profile-wrapper" style="background-color:rgba(146, 31, 175, 0.884); border: 6px solid rgba(114, 20, 138, 0.801);">
+                <div class="card card-baby h-100 border-info" style="background-color: rgb(180, 231, 231);">
+                    <img id="profile-pic" src="{% static 'images/philsoph.jpg' %}" alt="It's me my honesty">
+                    <hr>
+                    <h4>Hello dear!</h4>
+                    <p>I'm from earth. It's my site, exactly it's me! You can see all my life here still now.</p>
+                    <p>من ساکن کره زمین هستم. این سایت بنده هست اما اگربخواهم برای شما دقیق تر بگویم این سایت من هستم. شما می توانید تمام زندگی من را اینجا مشاهده کنید!</p>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card card-baby h-100" style="background-color:rgba(109, 245, 238, 0.959); border: 6px solid rgba(114, 20, 138, 0.801); text-align: center; ">
+                    <h5><i>
+                            Now, at this time '21/3/2021' that I code this site, I'm 13 years old. In other words now it's the
+                        biggining of 14th sentury (Shamsy)
+                        I hope this sentury we have perfect sentury and future!
+                    </h5></i>
+                    <p><i><h5 style="color: rgb(38, 46, 51);">الان یعنی زمانی که نوشتن این سایت را شروع کردم، 13 سال دارم. به عبارتی دیگر امروز اولین روز سال 1400 یعنی روز اول قرن چهارهم هجری شمسی است امیدوارم قرن و آینده خوبی را در پیشرو داشته باشیم</h5></i></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-baby h-100" style="background-color: teal; color:rgb(66, 8, 114);" ><strong> If you want to logout, you can by this bottom:-(</strong></div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-baby" style="width: 300px;"><strong style="text-align:left; color: slateblue;">Please, give me a comment here:</strong></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-baby" style="height: 90px;width: 70% ;text-align: center; align-items: center; background-color: steelblue;"><img width="15%" src="{% static 'images/iconl.jpg' %}"><form method="POST">
+                    <input type="hidden" name="Logout" value="Logout">
+                    {% csrf_token %}
+                    <input type="submit" style="width:80px ; background-color: snow; color: black;background-color: darkturquoise; " value="Logout">
+                </form></div>
+            </div>
+            <br>
+            <div class="col-md-6">
+                <div class="card card-baby" style="text-align: center; width: 100px; align-self: center; height: 60px;">
+                    <a href="/comment"><img width="80" height="40" src="{% static 'images/cloud.jpg' %}" alt="comment"><h6>comment</h6></a>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+</body>
+</html>
+
+
