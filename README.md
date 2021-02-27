@@ -8,3 +8,4 @@
 # 6- And saving task in django-admin
 # 7- Task is comment
 # 8- Just Home and profile has a beautiful seems just for learning
+# 9- I don't set something so it isn't enough to create your site
